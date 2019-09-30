@@ -12,5 +12,5 @@ A personal program to keep track of shoe collections using C# (Work in progress)
  # Features to work on
   * Importing a collection is not available yet
   * Need to figure out how to show current list in the removing shoe panel (trying to cirumvent doubling printList function for another panel
-  * 
+  * Need to comment
   
