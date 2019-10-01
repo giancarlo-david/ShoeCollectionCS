@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ShoeCollectionCS
 {
@@ -22,6 +23,7 @@ namespace ShoeCollectionCS
         void printList()
         {
             currentListView.Items.Clear();
+            removeShoeListView.Items.Clear();
             int numberOfShoe = 1;
             foreach (shoe currentShoe in shoeList)
             {
@@ -30,6 +32,16 @@ namespace ShoeCollectionCS
                 currentListView.Items.Add(shoeToAdd);
                 numberOfShoe++;
             }
+
+            numberOfShoe = 1;
+            foreach (shoe currentShoe in shoeList)
+            {
+                string[] row = new string[] { numberOfShoe.ToString(), currentShoe.Brand, currentShoe.Model, currentShoe.Color };
+                ListViewItem shoeToAdd = new ListViewItem(row);
+                removeShoeListView.Items.Add(shoeToAdd);
+                numberOfShoe++;
+            }
+
         }
 
         private void createCollectionButton_Click(object sender, EventArgs e)
@@ -115,6 +127,74 @@ namespace ShoeCollectionCS
             editMenuPanel.Visible = false;
             removeShoePanel.Visible = true;
             currentListView.BringToFront();
+        }
+
+        private void saveListButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog saveDialog = new SaveFileDialog();
+
+                saveDialog.FileName = "DefaultOutput.txt";
+                saveDialog.Filter = "Text File | *.txt";
+
+                if (saveDialog.ShowDialog() == DialogResult.OK)
+                {
+                    StreamWriter writer = new StreamWriter(saveDialog.OpenFile());
+                    for (int i = 0; i < shoeList.Count; i++)
+                    {
+                        writer.WriteLine(shoeList[i].Brand + "|" + shoeList[i].Model + "|" + shoeList[i].Color + "|");
+                    }
+
+                    writer.Dispose();
+                    writer.Close();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void importCollectionButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog openCollection = new OpenFileDialog();
+                openCollection.FileName = "DefaultOutput.txt";
+                openCollection.Filter = "Text File | *.txt";
+
+                if (openCollection.ShowDialog() == DialogResult.OK)
+                {
+                    StreamReader inputFile = new StreamReader(openCollection.OpenFile());
+                    string inputLine;
+                    string[] shoeComponents;
+                    shoe tempShoe = new shoe();
+
+                    while(!inputFile.EndOfStream)
+                    {
+                        inputLine = inputFile.ReadLine();
+                        shoeComponents = inputLine.Split('|');
+
+                        tempShoe.Brand = shoeComponents[0];
+                        tempShoe.Model = shoeComponents[1];
+                        tempShoe.Color = shoeComponents[2];
+
+                        shoeList.Add(tempShoe);
+                    }
+
+                }
+
+                mainMenuBox.Visible = false;
+                printList();
+                editMenuPanel.Visible = true;
+            }
+
+            catch
+            {
+                MessageBox.Show("Error getting input file");
+            }
         }
     }
 }
