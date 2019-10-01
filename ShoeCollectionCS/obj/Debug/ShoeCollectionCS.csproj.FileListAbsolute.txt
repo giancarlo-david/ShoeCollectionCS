@@ -8,3 +8,13 @@ G:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\ShoeCollection
 G:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.csproj.CoreCompileInputs.cache
 G:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.exe
 G:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.pdb
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\bin\Debug\ShoeCollectionCS.exe.config
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\bin\Debug\ShoeCollectionCS.exe
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\bin\Debug\ShoeCollectionCS.pdb
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.csprojAssemblyReference.cache
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.Form1.resources
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.Properties.Resources.resources
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.csproj.GenerateResource.cache
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.csproj.CoreCompileInputs.cache
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.exe
+C:\Users\gianc\Documents\GitHub\ShoeCollectionCS\ShoeCollectionCS\obj\Debug\ShoeCollectionCS.pdb
