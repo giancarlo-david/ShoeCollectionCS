@@ -10,7 +10,3 @@ A personal program to keep track of shoe collections using C#
   * How events work in C# (Still need to learn dynamic events and event handling, just learned some basics about events)
   * How to make my project with a GUI! (Super proud of this one)
   * Not to use data mutation in the import method to add tempShoe to the list and instead create a new object within the while loop to avoid data mutation and also have the method function correctly
-  
- # Features to work on
-  * Need to comment
-  
