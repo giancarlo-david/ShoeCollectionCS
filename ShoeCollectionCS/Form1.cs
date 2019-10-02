@@ -161,6 +161,7 @@ namespace ShoeCollectionCS
         {
             try
             {
+                shoeList.Clear();
                 OpenFileDialog openCollection = new OpenFileDialog();
                 openCollection.FileName = "DefaultOutput.txt";
                 openCollection.Filter = "Text File | *.txt";
@@ -170,10 +171,12 @@ namespace ShoeCollectionCS
                     StreamReader inputFile = new StreamReader(openCollection.OpenFile());
                     string inputLine;
                     string[] shoeComponents;
-                    shoe tempShoe = new shoe();
+                    
+                    
 
                     while(!inputFile.EndOfStream)
                     {
+                        shoe tempShoe = new shoe();
                         inputLine = inputFile.ReadLine();
                         shoeComponents = inputLine.Split('|');
 
@@ -182,8 +185,11 @@ namespace ShoeCollectionCS
                         tempShoe.Color = shoeComponents[2];
 
                         shoeList.Add(tempShoe);
+
                     }
 
+                    inputFile.Dispose();
+                    inputFile.Close();
                 }
 
                 mainMenuBox.Visible = false;
@@ -193,7 +199,7 @@ namespace ShoeCollectionCS
 
             catch
             {
-                MessageBox.Show("Error getting input file");
+                MessageBox.Show("Error");
             }
         }
     }

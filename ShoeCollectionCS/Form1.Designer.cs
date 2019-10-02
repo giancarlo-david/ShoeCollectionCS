@@ -52,10 +52,10 @@
             this.colorColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.optionsLabel = new System.Windows.Forms.Label();
             this.currentCollectionLabel = new System.Windows.Forms.Label();
-            this.addToCurrentButton = new System.Windows.Forms.Button();
-            this.exitEditMenuButton = new System.Windows.Forms.Button();
             this.toMainMenu = new System.Windows.Forms.Button();
+            this.exitEditMenuButton = new System.Windows.Forms.Button();
             this.removeFromCurrentButton = new System.Windows.Forms.Button();
+            this.addToCurrentButton = new System.Windows.Forms.Button();
             this.removeShoePanel = new System.Windows.Forms.Panel();
             this.removeShoeListView = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -85,16 +85,19 @@
             // 
             this.mainMenuBox.Controls.Add(this.splitContainer1);
             this.mainMenuBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainMenuBox.Location = new System.Drawing.Point(202, 112);
+            this.mainMenuBox.Location = new System.Drawing.Point(303, 172);
+            this.mainMenuBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainMenuBox.Name = "mainMenuBox";
-            this.mainMenuBox.Size = new System.Drawing.Size(375, 211);
+            this.mainMenuBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mainMenuBox.Size = new System.Drawing.Size(562, 325);
             this.mainMenuBox.TabIndex = 0;
             this.mainMenuBox.TabStop = false;
             this.mainMenuBox.Text = "Main Menu";
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(3, 20);
+            this.splitContainer1.Location = new System.Drawing.Point(4, 31);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -105,17 +108,18 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.importCollectionButton);
             this.splitContainer1.Panel2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitContainer1.Size = new System.Drawing.Size(367, 170);
-            this.splitContainer1.SplitterDistance = 178;
-            this.splitContainer1.SplitterWidth = 1;
+            this.splitContainer1.Size = new System.Drawing.Size(550, 262);
+            this.splitContainer1.SplitterDistance = 266;
+            this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 0;
             // 
             // createCollectionButton
             // 
             this.createCollectionButton.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createCollectionButton.Location = new System.Drawing.Point(0, -3);
+            this.createCollectionButton.Location = new System.Drawing.Point(0, -5);
+            this.createCollectionButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.createCollectionButton.Name = "createCollectionButton";
-            this.createCollectionButton.Size = new System.Drawing.Size(176, 187);
+            this.createCollectionButton.Size = new System.Drawing.Size(264, 288);
             this.createCollectionButton.TabIndex = 0;
             this.createCollectionButton.Text = "Create a new collection";
             this.createCollectionButton.UseVisualStyleBackColor = true;
@@ -124,9 +128,10 @@
             // importCollectionButton
             // 
             this.importCollectionButton.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.importCollectionButton.Location = new System.Drawing.Point(1, 0);
+            this.importCollectionButton.Location = new System.Drawing.Point(2, 0);
+            this.importCollectionButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.importCollectionButton.Name = "importCollectionButton";
-            this.importCollectionButton.Size = new System.Drawing.Size(179, 186);
+            this.importCollectionButton.Size = new System.Drawing.Size(268, 286);
             this.importCollectionButton.TabIndex = 1;
             this.importCollectionButton.Text = "Import a saved collection";
             this.importCollectionButton.UseVisualStyleBackColor = true;
@@ -144,25 +149,28 @@
             this.addShoePanel.Controls.Add(this.addColorLabel);
             this.addShoePanel.Controls.Add(this.addModelLabel);
             this.addShoePanel.Controls.Add(this.addBrandLabel);
-            this.addShoePanel.Location = new System.Drawing.Point(123, 45);
+            this.addShoePanel.Location = new System.Drawing.Point(184, 69);
+            this.addShoePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addShoePanel.Name = "addShoePanel";
-            this.addShoePanel.Size = new System.Drawing.Size(542, 383);
+            this.addShoePanel.Size = new System.Drawing.Size(813, 589);
             this.addShoePanel.TabIndex = 1;
             this.addShoePanel.Visible = false;
             // 
             // addedShoeLabel
             // 
             this.addedShoeLabel.AutoSize = true;
-            this.addedShoeLabel.Location = new System.Drawing.Point(213, 245);
+            this.addedShoeLabel.Location = new System.Drawing.Point(320, 377);
+            this.addedShoeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addedShoeLabel.Name = "addedShoeLabel";
-            this.addedShoeLabel.Size = new System.Drawing.Size(0, 13);
+            this.addedShoeLabel.Size = new System.Drawing.Size(0, 20);
             this.addedShoeLabel.TabIndex = 8;
             // 
             // finishAddShoeButton
             // 
-            this.finishAddShoeButton.Location = new System.Drawing.Point(297, 295);
+            this.finishAddShoeButton.Location = new System.Drawing.Point(446, 454);
+            this.finishAddShoeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.finishAddShoeButton.Name = "finishAddShoeButton";
-            this.finishAddShoeButton.Size = new System.Drawing.Size(114, 34);
+            this.finishAddShoeButton.Size = new System.Drawing.Size(171, 52);
             this.finishAddShoeButton.TabIndex = 4;
             this.finishAddShoeButton.Text = "Finish";
             this.finishAddShoeButton.UseVisualStyleBackColor = true;
@@ -172,17 +180,19 @@
             // 
             this.addingShoesLabel.AutoSize = true;
             this.addingShoesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addingShoesLabel.Location = new System.Drawing.Point(192, 63);
+            this.addingShoesLabel.Location = new System.Drawing.Point(288, 97);
+            this.addingShoesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addingShoesLabel.Name = "addingShoesLabel";
-            this.addingShoesLabel.Size = new System.Drawing.Size(125, 20);
+            this.addingShoesLabel.Size = new System.Drawing.Size(188, 29);
             this.addingShoesLabel.TabIndex = 7;
             this.addingShoesLabel.Text = "Adding Shoes ...";
             // 
             // addShoeButton
             // 
-            this.addShoeButton.Location = new System.Drawing.Point(110, 295);
+            this.addShoeButton.Location = new System.Drawing.Point(165, 454);
+            this.addShoeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addShoeButton.Name = "addShoeButton";
-            this.addShoeButton.Size = new System.Drawing.Size(113, 34);
+            this.addShoeButton.Size = new System.Drawing.Size(170, 52);
             this.addShoeButton.TabIndex = 3;
             this.addShoeButton.Text = "Add Shoe";
             this.addShoeButton.UseVisualStyleBackColor = true;
@@ -190,32 +200,36 @@
             // 
             // addColorTextbox
             // 
-            this.addColorTextbox.Location = new System.Drawing.Point(262, 203);
+            this.addColorTextbox.Location = new System.Drawing.Point(393, 312);
+            this.addColorTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addColorTextbox.Name = "addColorTextbox";
-            this.addColorTextbox.Size = new System.Drawing.Size(149, 20);
+            this.addColorTextbox.Size = new System.Drawing.Size(222, 26);
             this.addColorTextbox.TabIndex = 2;
             // 
             // addBrandTextbox
             // 
-            this.addBrandTextbox.Location = new System.Drawing.Point(262, 109);
+            this.addBrandTextbox.Location = new System.Drawing.Point(393, 168);
+            this.addBrandTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addBrandTextbox.Name = "addBrandTextbox";
-            this.addBrandTextbox.Size = new System.Drawing.Size(149, 20);
+            this.addBrandTextbox.Size = new System.Drawing.Size(222, 26);
             this.addBrandTextbox.TabIndex = 0;
             // 
             // addModelTextbox
             // 
-            this.addModelTextbox.Location = new System.Drawing.Point(262, 154);
+            this.addModelTextbox.Location = new System.Drawing.Point(393, 237);
+            this.addModelTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addModelTextbox.Name = "addModelTextbox";
-            this.addModelTextbox.Size = new System.Drawing.Size(149, 20);
+            this.addModelTextbox.Size = new System.Drawing.Size(222, 26);
             this.addModelTextbox.TabIndex = 1;
             // 
             // addColorLabel
             // 
             this.addColorLabel.AutoSize = true;
             this.addColorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addColorLabel.Location = new System.Drawing.Point(106, 201);
+            this.addColorLabel.Location = new System.Drawing.Point(159, 309);
+            this.addColorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addColorLabel.Name = "addColorLabel";
-            this.addColorLabel.Size = new System.Drawing.Size(77, 20);
+            this.addColorLabel.Size = new System.Drawing.Size(120, 29);
             this.addColorLabel.TabIndex = 2;
             this.addColorLabel.Text = "Colorway:";
             // 
@@ -223,9 +237,10 @@
             // 
             this.addModelLabel.AutoSize = true;
             this.addModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addModelLabel.Location = new System.Drawing.Point(106, 152);
+            this.addModelLabel.Location = new System.Drawing.Point(159, 234);
+            this.addModelLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addModelLabel.Name = "addModelLabel";
-            this.addModelLabel.Size = new System.Drawing.Size(56, 20);
+            this.addModelLabel.Size = new System.Drawing.Size(87, 29);
             this.addModelLabel.TabIndex = 1;
             this.addModelLabel.Text = "Model:";
             // 
@@ -233,9 +248,10 @@
             // 
             this.addBrandLabel.AutoSize = true;
             this.addBrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBrandLabel.Location = new System.Drawing.Point(106, 109);
+            this.addBrandLabel.Location = new System.Drawing.Point(159, 168);
+            this.addBrandLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addBrandLabel.Name = "addBrandLabel";
-            this.addBrandLabel.Size = new System.Drawing.Size(56, 20);
+            this.addBrandLabel.Size = new System.Drawing.Size(83, 29);
             this.addBrandLabel.TabIndex = 0;
             this.addBrandLabel.Text = "Brand:";
             this.addBrandLabel.Click += new System.EventHandler(this.addBrandLabel_Click);
@@ -251,20 +267,20 @@
             this.editMenuPanel.Controls.Add(this.removeFromCurrentButton);
             this.editMenuPanel.Controls.Add(this.addToCurrentButton);
             this.editMenuPanel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.editMenuPanel.Location = new System.Drawing.Point(123, 45);
+            this.editMenuPanel.Location = new System.Drawing.Point(184, 69);
+            this.editMenuPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.editMenuPanel.Name = "editMenuPanel";
-            this.editMenuPanel.Size = new System.Drawing.Size(542, 383);
+            this.editMenuPanel.Size = new System.Drawing.Size(813, 589);
             this.editMenuPanel.TabIndex = 8;
             this.editMenuPanel.TabStop = true;
             this.editMenuPanel.Visible = false;
             // 
             // saveListButton
             // 
-            this.saveListButton.Location = new System.Drawing.Point(53, 188);
-            this.saveListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveListButton.Location = new System.Drawing.Point(80, 289);
             this.saveListButton.Name = "saveListButton";
-            this.saveListButton.Size = new System.Drawing.Size(85, 58);
-            this.saveListButton.TabIndex = 13;
+            this.saveListButton.Size = new System.Drawing.Size(128, 89);
+            this.saveListButton.TabIndex = 3;
             this.saveListButton.Text = "Save Collection";
             this.saveListButton.UseVisualStyleBackColor = true;
             this.saveListButton.Click += new System.EventHandler(this.saveListButton_Click);
@@ -279,9 +295,10 @@
             this.currentListView.FullRowSelect = true;
             this.currentListView.GridLines = true;
             this.currentListView.HideSelection = false;
-            this.currentListView.Location = new System.Drawing.Point(180, 54);
+            this.currentListView.Location = new System.Drawing.Point(270, 83);
+            this.currentListView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.currentListView.Name = "currentListView";
-            this.currentListView.Size = new System.Drawing.Size(362, 329);
+            this.currentListView.Size = new System.Drawing.Size(541, 504);
             this.currentListView.TabIndex = 4;
             this.currentListView.TabStop = false;
             this.currentListView.UseCompatibleStateImageBehavior = false;
@@ -310,60 +327,66 @@
             // optionsLabel
             // 
             this.optionsLabel.AutoSize = true;
-            this.optionsLabel.Location = new System.Drawing.Point(76, 35);
+            this.optionsLabel.Location = new System.Drawing.Point(114, 54);
+            this.optionsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.optionsLabel.Name = "optionsLabel";
-            this.optionsLabel.Size = new System.Drawing.Size(43, 13);
+            this.optionsLabel.Size = new System.Drawing.Size(64, 20);
             this.optionsLabel.TabIndex = 6;
             this.optionsLabel.Text = "Options";
             // 
             // currentCollectionLabel
             // 
             this.currentCollectionLabel.AutoSize = true;
-            this.currentCollectionLabel.Location = new System.Drawing.Point(345, 35);
+            this.currentCollectionLabel.Location = new System.Drawing.Point(518, 54);
+            this.currentCollectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentCollectionLabel.Name = "currentCollectionLabel";
-            this.currentCollectionLabel.Size = new System.Drawing.Size(90, 13);
+            this.currentCollectionLabel.Size = new System.Drawing.Size(135, 20);
             this.currentCollectionLabel.TabIndex = 5;
             this.currentCollectionLabel.Text = "Current Collection";
             // 
-            // addToCurrentButton
-            // 
-            this.addToCurrentButton.Location = new System.Drawing.Point(53, 59);
-            this.addToCurrentButton.Name = "addToCurrentButton";
-            this.addToCurrentButton.Size = new System.Drawing.Size(85, 58);
-            this.addToCurrentButton.TabIndex = 1;
-            this.addToCurrentButton.Text = "Add Shoe";
-            this.addToCurrentButton.UseVisualStyleBackColor = true;
-            this.addToCurrentButton.Click += new System.EventHandler(this.addToCurrentButton_Click);
-            // 
-            // exitEditMenuButton
-            // 
-            this.exitEditMenuButton.Location = new System.Drawing.Point(53, 317);
-            this.exitEditMenuButton.Name = "exitEditMenuButton";
-            this.exitEditMenuButton.Size = new System.Drawing.Size(85, 60);
-            this.exitEditMenuButton.TabIndex = 4;
-            this.exitEditMenuButton.Text = "Exit";
-            this.exitEditMenuButton.UseVisualStyleBackColor = true;
-            this.exitEditMenuButton.Click += new System.EventHandler(this.exitEditMenuButton_Click);
-            // 
             // toMainMenu
             // 
-            this.toMainMenu.Location = new System.Drawing.Point(53, 251);
+            this.toMainMenu.Location = new System.Drawing.Point(80, 386);
+            this.toMainMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.toMainMenu.Name = "toMainMenu";
-            this.toMainMenu.Size = new System.Drawing.Size(85, 60);
-            this.toMainMenu.TabIndex = 3;
+            this.toMainMenu.Size = new System.Drawing.Size(128, 92);
+            this.toMainMenu.TabIndex = 4;
             this.toMainMenu.Text = "Main Menu";
             this.toMainMenu.UseVisualStyleBackColor = true;
             this.toMainMenu.Click += new System.EventHandler(this.toMainMenu_Click);
             // 
+            // exitEditMenuButton
+            // 
+            this.exitEditMenuButton.Location = new System.Drawing.Point(80, 488);
+            this.exitEditMenuButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exitEditMenuButton.Name = "exitEditMenuButton";
+            this.exitEditMenuButton.Size = new System.Drawing.Size(128, 92);
+            this.exitEditMenuButton.TabIndex = 5;
+            this.exitEditMenuButton.Text = "Exit";
+            this.exitEditMenuButton.UseVisualStyleBackColor = true;
+            this.exitEditMenuButton.Click += new System.EventHandler(this.exitEditMenuButton_Click);
+            // 
             // removeFromCurrentButton
             // 
-            this.removeFromCurrentButton.Location = new System.Drawing.Point(53, 123);
+            this.removeFromCurrentButton.Location = new System.Drawing.Point(80, 189);
+            this.removeFromCurrentButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.removeFromCurrentButton.Name = "removeFromCurrentButton";
-            this.removeFromCurrentButton.Size = new System.Drawing.Size(85, 60);
+            this.removeFromCurrentButton.Size = new System.Drawing.Size(128, 92);
             this.removeFromCurrentButton.TabIndex = 2;
             this.removeFromCurrentButton.Text = "Remove Shoe";
             this.removeFromCurrentButton.UseVisualStyleBackColor = true;
             this.removeFromCurrentButton.Click += new System.EventHandler(this.removeFromCurrentButton_Click);
+            // 
+            // addToCurrentButton
+            // 
+            this.addToCurrentButton.Location = new System.Drawing.Point(80, 91);
+            this.addToCurrentButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addToCurrentButton.Name = "addToCurrentButton";
+            this.addToCurrentButton.Size = new System.Drawing.Size(128, 89);
+            this.addToCurrentButton.TabIndex = 1;
+            this.addToCurrentButton.Text = "Add Shoe";
+            this.addToCurrentButton.UseVisualStyleBackColor = true;
+            this.addToCurrentButton.Click += new System.EventHandler(this.addToCurrentButton_Click);
             // 
             // removeShoePanel
             // 
@@ -375,9 +398,10 @@
             this.removeShoePanel.Controls.Add(this.removeShoeInstructions);
             this.removeShoePanel.Controls.Add(this.finishRemoveShoeButton);
             this.removeShoePanel.Controls.Add(this.removeShoeButton);
-            this.removeShoePanel.Location = new System.Drawing.Point(123, 45);
+            this.removeShoePanel.Location = new System.Drawing.Point(184, 69);
+            this.removeShoePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.removeShoePanel.Name = "removeShoePanel";
-            this.removeShoePanel.Size = new System.Drawing.Size(542, 383);
+            this.removeShoePanel.Size = new System.Drawing.Size(813, 589);
             this.removeShoePanel.TabIndex = 7;
             this.removeShoePanel.Visible = false;
             // 
@@ -391,9 +415,10 @@
             this.removeShoeListView.FullRowSelect = true;
             this.removeShoeListView.GridLines = true;
             this.removeShoeListView.HideSelection = false;
-            this.removeShoeListView.Location = new System.Drawing.Point(181, 55);
+            this.removeShoeListView.Location = new System.Drawing.Point(272, 85);
+            this.removeShoeListView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.removeShoeListView.Name = "removeShoeListView";
-            this.removeShoeListView.Size = new System.Drawing.Size(362, 329);
+            this.removeShoeListView.Size = new System.Drawing.Size(541, 504);
             this.removeShoeListView.TabIndex = 12;
             this.removeShoeListView.TabStop = false;
             this.removeShoeListView.UseCompatibleStateImageBehavior = false;
@@ -422,51 +447,57 @@
             // removedLabel
             // 
             this.removedLabel.AutoSize = true;
-            this.removedLabel.Location = new System.Drawing.Point(56, 189);
+            this.removedLabel.Location = new System.Drawing.Point(84, 291);
+            this.removedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.removedLabel.Name = "removedLabel";
-            this.removedLabel.Size = new System.Drawing.Size(56, 13);
+            this.removedLabel.Size = new System.Drawing.Size(81, 20);
             this.removedLabel.TabIndex = 11;
             this.removedLabel.Text = "Removed:";
             // 
             // removedShoeLabel
             // 
             this.removedShoeLabel.AutoSize = true;
-            this.removedShoeLabel.Location = new System.Drawing.Point(29, 210);
+            this.removedShoeLabel.Location = new System.Drawing.Point(44, 323);
+            this.removedShoeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.removedShoeLabel.Name = "removedShoeLabel";
-            this.removedShoeLabel.Size = new System.Drawing.Size(0, 13);
+            this.removedShoeLabel.Size = new System.Drawing.Size(0, 20);
             this.removedShoeLabel.TabIndex = 10;
             // 
             // shoeToRemoveTextBox
             // 
-            this.shoeToRemoveTextBox.Location = new System.Drawing.Point(32, 154);
+            this.shoeToRemoveTextBox.Location = new System.Drawing.Point(48, 237);
+            this.shoeToRemoveTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.shoeToRemoveTextBox.Name = "shoeToRemoveTextBox";
-            this.shoeToRemoveTextBox.Size = new System.Drawing.Size(106, 20);
+            this.shoeToRemoveTextBox.Size = new System.Drawing.Size(157, 26);
             this.shoeToRemoveTextBox.TabIndex = 0;
             // 
             // currentListViewLabel
             // 
             this.currentListViewLabel.AutoSize = true;
-            this.currentListViewLabel.Location = new System.Drawing.Point(321, 35);
+            this.currentListViewLabel.Location = new System.Drawing.Point(482, 54);
+            this.currentListViewLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentListViewLabel.Name = "currentListViewLabel";
-            this.currentListViewLabel.Size = new System.Drawing.Size(90, 13);
+            this.currentListViewLabel.Size = new System.Drawing.Size(135, 20);
             this.currentListViewLabel.TabIndex = 9;
             this.currentListViewLabel.Text = "Current Collection";
             // 
             // removeShoeInstructions
             // 
             this.removeShoeInstructions.AutoSize = true;
-            this.removeShoeInstructions.Location = new System.Drawing.Point(15, 103);
+            this.removeShoeInstructions.Location = new System.Drawing.Point(22, 158);
+            this.removeShoeInstructions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.removeShoeInstructions.Name = "removeShoeInstructions";
-            this.removeShoeInstructions.Size = new System.Drawing.Size(147, 26);
+            this.removeShoeInstructions.Size = new System.Drawing.Size(221, 40);
             this.removeShoeInstructions.TabIndex = 8;
             this.removeShoeInstructions.Text = "Enter the number of the shoe \r\nyou want to remove";
             this.removeShoeInstructions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // finishRemoveShoeButton
             // 
-            this.finishRemoveShoeButton.Location = new System.Drawing.Point(32, 317);
+            this.finishRemoveShoeButton.Location = new System.Drawing.Point(48, 488);
+            this.finishRemoveShoeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.finishRemoveShoeButton.Name = "finishRemoveShoeButton";
-            this.finishRemoveShoeButton.Size = new System.Drawing.Size(106, 29);
+            this.finishRemoveShoeButton.Size = new System.Drawing.Size(159, 45);
             this.finishRemoveShoeButton.TabIndex = 2;
             this.finishRemoveShoeButton.Text = "Finish";
             this.finishRemoveShoeButton.UseVisualStyleBackColor = true;
@@ -474,9 +505,10 @@
             // 
             // removeShoeButton
             // 
-            this.removeShoeButton.Location = new System.Drawing.Point(32, 264);
+            this.removeShoeButton.Location = new System.Drawing.Point(48, 406);
+            this.removeShoeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.removeShoeButton.Name = "removeShoeButton";
-            this.removeShoeButton.Size = new System.Drawing.Size(106, 29);
+            this.removeShoeButton.Size = new System.Drawing.Size(159, 45);
             this.removeShoeButton.TabIndex = 1;
             this.removeShoeButton.Text = "Remove Shoe";
             this.removeShoeButton.UseVisualStyleBackColor = true;
@@ -488,13 +520,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.mainMenuBox);
-            this.Controls.Add(this.addShoePanel);
-            this.Controls.Add(this.removeShoePanel);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.editMenuPanel);
+            this.Controls.Add(this.addShoePanel);
+            this.Controls.Add(this.mainMenuBox);
+            this.Controls.Add(this.removeShoePanel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Shoe Collection";
             this.mainMenuBox.ResumeLayout(false);
