@@ -140,14 +140,22 @@ namespace ShoeCollectionCS
         // Event for when the Remove Shoe button in the Remove Shoe Panel is clicked
         private void removeShoeButton_Click(object sender, EventArgs e)
         {
-            // Sets the shoeIndex variable to the number the user enters - 1 which is the actual index of the shoe 
-            //  the user is trying to remove
-            int shoeIndex = int.Parse(shoeToRemoveTextBox.Text) - 1;
+            try
+            {
+                // Sets the shoeIndex variable to the number the user enters - 1 which is the actual index of the shoe 
+                //  the user is trying to remove
+                int shoeIndex = int.Parse(shoeToRemoveTextBox.Text) - 1;
 
-            // Updates the label to let the user know which shoe they removed, removes the shoe from the list and reprints the current list
-            removedShoeLabel.Text = "Removed: " + shoeList[shoeIndex].Brand + " " + shoeList[shoeIndex].Model + " " + shoeList[shoeIndex].Color;
-            shoeList.RemoveAt(shoeIndex);
-            printList();
+                // Updates the label to let the user know which shoe they removed, removes the shoe from the list and reprints the current list
+                removedShoeLabel.Text = "Removed: " + shoeList[shoeIndex].Brand + " " + shoeList[shoeIndex].Model + " " + shoeList[shoeIndex].Color;
+                shoeList.RemoveAt(shoeIndex);
+                printList();
+            }
+
+            catch
+            {
+                MessageBox.Show("Please enter a valid number");
+            }
 
         }
 
